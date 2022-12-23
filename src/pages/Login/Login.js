@@ -5,7 +5,7 @@ import useTitle from '../../hooks/useTitle';
 const Login = () => {
 
   const {user,createUser}=useContext(AuthContext)
-     //useTitle('Login')
+     //  useTitle('Login')
   const handleLogin =event=>{
     event.preventDefault()
     const form = event.target;
