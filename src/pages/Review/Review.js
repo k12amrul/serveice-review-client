@@ -24,7 +24,7 @@ const Review = () => {
             customarName,
             message,
         }
-        fetch('http://localhost:5000/reviews' , {
+        fetch('https://assignment11-server-pi.vercel.app/reviews' , {
             method: 'POST', // or 'PUT'
   headers: {
     'Content-Type': 'application/json',

@@ -38,12 +38,12 @@ import PrivateRoute from "./PrivateRoute/PrivateRoute";
             {
                 path : '/chekout/:id',
                 element : <Chekout/>,
-                loader : ({params}) => fetch(`http://localhost:5000/services/${params.id}`)
+                loader : ({params}) => fetch(`https://assignment11-server-pi.vercel.app/services/${params.id}`)
             },
             {
                 path : '/review/:id',
                 element : <Review/>,
-                loader : ({params}) => fetch(`http://localhost:5000/services/${params.id}`)
+                loader : ({params}) => fetch(`https://assignment11-server-pi.vercel.app/services/${params.id}`)
 
             },
             {

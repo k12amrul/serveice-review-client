@@ -9,7 +9,7 @@ const ShowReviews = () => {
     const {user } =useContext(AuthContext)
     const [reviews  ,setReview]= useState([])       
     useEffect( ()  => {
-        fetch(`http://localhost:5000/reviews?email=${user?.email}`)
+        fetch(`https://assignment11-server-pi.vercel.app/reviews?email=${user?.email}`)
         .then( res => res.json())
         .then(data => setReview(data))
 
