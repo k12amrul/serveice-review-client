@@ -6,7 +6,7 @@ import { routes } from './Routes/Routes';
 function App() {
   return (
     <div className="">
-      
+
       
       <RouterProvider  router={routes}></RouterProvider>
     
@@ -15,3 +15,8 @@ function App() {
 }
 
 export default App;
+
+
+// git add .
+// git commit -m "final commit"
+// git push 
