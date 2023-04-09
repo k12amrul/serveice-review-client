@@ -39,9 +39,7 @@ import PrivateRoute from "./PrivateRoute/PrivateRoute";
             {
                 path : '/services/:id',
                 element : <ServiceDetails/>,
-            //    loader : ({ params} ) =>fetch(`process.env.REACT_APP_API_URL/services/${params.id}`)
                loader : ({ params} ) => fetch(`${process.env.REACT_APP_API_URL}/services/${params?.id}`)
-            //    fetch(`process.env.REACT_APP_API_URL/services/${params.id}`)
             },
             {
                 path : '/chekout/:id',
